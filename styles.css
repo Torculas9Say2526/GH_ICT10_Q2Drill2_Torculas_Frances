@@ -1,0 +1,104 @@
+body {
+    background-color: #111329;
+    background-image:
+        radial-gradient(circle at 10% 15%, white 1px, transparent 2px),
+        radial-gradient(circle at 80% 25%, #E8C987 2px, transparent 3px),
+        radial-gradient(circle at 30% 70%, #B9A7E8 1.5px, transparent 3px),
+        radial-gradient(circle at 90% 85%, white 1px, transparent 2px),
+        radial-gradient(ellipse at top left, #49366B, transparent 55%),
+        radial-gradient(ellipse at bottom right, #30234D, transparent 50%),
+        linear-gradient(to bottom, #111329, #211938, #111329);
+
+    background-size: 100px 100px, 150px 150px,
+                     120px 120px, 90px 90px,
+                     100% 100%, 100% 100%, 100% 100%;
+
+    background-attachment: fixed;
+    color: #F5F1FF;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Title */
+h1 {
+    color: #E8C987;
+    font-family: "Times New Roman", serif;
+    font-size: 36px;
+    text-shadow: 0 0 10px #B9A7E8;
+    margin-bottom: 30px;
+}
+
+/* Main container */
+form {
+    background-color: rgba(39, 32, 68, 0.95);
+    padding: 30px;
+    border: 1px solid #65558A;
+    border-radius: 15px;
+    width: 280px;
+    margin: auto;
+    box-shadow: 0 5px 20px #0A0918;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #17152F;
+    color: white;
+    border: 1px solid #B9A7E8;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #E8C987;
+}
+
+/* Search button */
+input[type="button"] {
+    background-color: #E8C987;
+    color: #17152F;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 30px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #B9A7E8;
+    box-shadow: 0 0 12px #B9A7E8;
+}
+
+/* Result container */
+#result {
+    background-color: rgba(39, 32, 68, 0.95);
+    color: #E8C987;
+    padding: 15px;
+    margin: 25px auto;
+    border-radius: 10px;
+    width: 280px;
+    border: 1px solid #65558A;
+    box-sizing: border-box;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    body {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    form {
+        width: 80%;
+    }
+}
